@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Document</title>
+
+</head>
+
+<body>
+<h2> js arrays</h2>
+<button onclick="asc()">asc button</button>
+<button onclick="dsc()">dsc button</button>
+<p id="res"></p>
+<script>
+    var name=[18,7,45,98,100]
+    document.getElementById("res").innerHTML=name;
+    function asc()
+    {
+        name.sort(function(a,b){return a-b});
+        document.getElementById("res").innerHTMl=name;
+    }
+    function dsc()
+    {
+        name.sort(function(a,b){return b-a});
+        document.getElementById("res").innerHTMl=name;
+    }
+    
+    
+</script>
+
+</body>
+
+</html>
